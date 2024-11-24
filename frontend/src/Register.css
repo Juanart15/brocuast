@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.bropage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-container,
+.right-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left-container {
+    border-right: 5px solid transparent;
+}
+
+.right-container {
+    border-left: 5px solid transparent;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo-container img {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+}
+
+
+
+.left-container {
+    border-right: 5px solid transparent;
+}
+
+.right-container {
+    border-left: 5px solid transparent;
+}
+
+.register-container {
+    position: relative;
+    text-align: left;
+}
+
+.bank-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+h2 {
+    color: #fff;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.register-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #1b2f58;
+}
+p {
+    color: #ccc;
+}
+p a {
+    color: #00f;
+    text-decoration: none;
+}
+
+.right-container img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+  
+  /* Fondo de estrellas */
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow: 0 0 10px white;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) translateX(0);
+      opacity: 5;
+    }
+    100% {
+      transform: translateY(100vh) translateX(calc(100vw - 50vw));
+      opacity: 6;
+    }
+  }
+  
+  /* Generar múltiples estrellas dinámicamente */
+  .star:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 0s;
+  }
+  
+  .star:nth-child(2) {
+    top: 30%;
+    left: 40%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  .star:nth-child(3) {
+    top: 50%;
+    left: 60%;
+    animation-duration: 2s;
+    animation-delay: 0s;
+  }
+  .star:nth-child(4) {
+    top: 15%;
+    left: 25%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  .star:nth-child(5) {
+    top: 35%;
+    left: 45%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  .star:nth-child(6) {
+    top: 43%;
+    left: 53%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  .star:nth-child(7) {
+    top: 43%;
+    left: 53%;
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+  
+  
